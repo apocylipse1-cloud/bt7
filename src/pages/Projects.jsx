@@ -107,16 +107,16 @@ const Projects = () => {
     <PageWrapper className='section-dark'>
       <div className="cinematic-overlay"></div>
       <div className='container mx-auto section-padding mb-[30vh] sm:mb-[40vh] lg:mb-[50vh]'>
-      {/* Page Header - Reduced top padding for desktop */}
-      <div className='pt-[25vh] sm:pt-[30vh] lg:pt-[20vh] xl:pt-[15vh] component-margin text-center'>
+      {/* Page Header */}
+      <div className='pt-[25vh] sm:pt-[30vh] lg:pt-[35vh] component-margin text-center'>
         <h1 className='font-[font2] heading-responsive-xl uppercase text-white text-layer-3 text-glow'>
           Projets
         </h1>
       </div>
 
-      <div className='projects-content space-y-16 sm:space-y-24 lg:space-y-20 xl:space-y-16'>
+      <div className='projects-content space-y-16 sm:space-y-24 lg:space-y-32'>
         {/* Teasers Section */}
-        <section className='floating-panel-dark space-y-8 sm:space-y-10 lg:space-y-8 xl:space-y-6'>
+        <section className='floating-panel-dark space-y-8 sm:space-y-10 lg:space-y-12'>
           <h2 className='section-title font-[font2] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl uppercase text-center text-layer-2 text-glow'>
             Teasers
           </h2>
@@ -128,7 +128,7 @@ const Projects = () => {
         </section>
 
         {/* Highlights Section */}
-        <section className='floating-panel-dark space-y-8 sm:space-y-10 lg:space-y-8 xl:space-y-6'>
+        <section className='floating-panel-dark space-y-8 sm:space-y-10 lg:space-y-12'>
           <h2 className='section-title font-[font2] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl uppercase text-center text-layer-2 text-glow'>
             Highlights
           </h2>
