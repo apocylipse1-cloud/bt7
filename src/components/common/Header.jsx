@@ -123,13 +123,13 @@ const Header = () => {
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-8 xl:space-x-12">
+            <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {navigationItems.map((item, index) => (
                 <div key={index} className="nav-item-animate">
                   {item.href.startsWith('#') ? (
                     <button
                       onClick={(e) => handleSmoothScroll(e, item.href)}
-                      className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group"
+                      className="nav-link font-[font2] text-sm lg:text-sm xl:text-base text-white uppercase tracking-wide relative group"
                     >
                       {item.name}
                       <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full" />
@@ -137,7 +137,7 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group"
+                      className="nav-link font-[font2] text-sm lg:text-sm xl:text-base text-white uppercase tracking-wide relative group"
                     >
                       {item.name}
                       <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full" />
@@ -150,7 +150,7 @@ const Header = () => {
               <div className="nav-item-animate">
                 <Link
                   to="/affiliate-program"
-                  className="affiliate-btn font-[font2] text-xs lg:text-sm xl:text-base text-white uppercase tracking-wide px-4 lg:px-6 py-2 lg:py-3 border border-gray-400 rounded-full transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:shadow-white/10 active:scale-95"
+                  className="affiliate-btn font-[font2] text-xs lg:text-xs xl:text-sm text-white uppercase tracking-wide px-3 lg:px-4 py-2 lg:py-2 border border-gray-400 rounded-full transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:shadow-white/10 active:scale-95"
                 >
                   Become an Affiliate
                 </Link>

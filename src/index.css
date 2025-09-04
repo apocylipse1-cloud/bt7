@@ -1308,6 +1308,76 @@ select.input-inset {
     .glow-accent {
         filter: drop-shadow(0 0 clamp(10px, 2.5vw, 15px) rgba(211, 253, 80, 0.4));
     }
+  
+  /* Desktop typography scaling */
+  .responsive-text-xs { font-size: clamp(0.75rem, 1.5vw, 0.875rem); }
+  .responsive-text-sm { font-size: clamp(0.875rem, 2vw, 1rem); }
+  .responsive-text-base { font-size: clamp(1rem, 2.5vw, 1.125rem); }
+  .responsive-text-lg { font-size: clamp(1.125rem, 3vw, 1.25rem); }
+  .responsive-text-xl { font-size: clamp(1.25rem, 3.5vw, 1.375rem); }
+  .responsive-text-2xl { font-size: clamp(1.5rem, 4vw, 1.625rem); }
+  .responsive-text-3xl { font-size: clamp(1.875rem, 5vw, 2.125rem); }
+  .responsive-text-4xl { font-size: clamp(2.25rem, 6vw, 2.75rem); }
+  .responsive-text-5xl { font-size: clamp(3rem, 7vw, 3.5rem); }
+  .responsive-text-6xl { font-size: clamp(3.75rem, 8vw, 4.25rem); }
+  .responsive-text-7xl { font-size: clamp(4.5rem, 9vw, 5.5rem); }
+  .responsive-text-8xl { font-size: clamp(6rem, 10vw, 7rem); }
+  .responsive-text-9xl { font-size: clamp(8rem, 12vw, 9rem); }
+  
+  /* Desktop heading scaling */
+  .heading-responsive-xl {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+  
+  .heading-responsive-lg {
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  }
+  
+  .heading-responsive-md {
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+  }
+  
+  .text-responsive {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+  }
+  
+  /* Desktop text layer scaling */
+  .text-layer-3 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+  }
+  
+  /* Desktop counter number scaling */
+  .counter-number {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  
+  /* Desktop icon scaling */
+  .micro-bounce {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+  }
+  
+  /* Desktop video glass spacing */
+  .video-glass {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Desktop form spacing */
+  .form-grid {
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+  }
+  
+  /* Desktop navigation spacing */
+  .nav-item {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+  
+  /* Desktop affiliate button */
+  .affiliate-btn {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
 }
 
 /* Accessibility enhancements */
