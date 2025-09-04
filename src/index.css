@@ -1240,13 +1240,39 @@ select.input-inset {
 @media (min-width: 1024px) {
     .floating-panel,
     .floating-panel-dark {
-        padding: 3rem;
-        margin: 1.5rem;
+        padding: 2rem;
+        margin: 1rem;
     }
     
     .btn-pill {
-        padding: 20px 40px;
-        font-size: 1.125rem;
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+    
+    /* Reduce overall section spacing on desktop */
+    .section-padding {
+        padding: clamp(4rem, 8vw, 6rem) 0;
+    }
+    
+    .component-margin {
+        margin: clamp(2rem, 4vw, 3rem) 0;
+    }
+    
+    /* Optimize desktop typography scaling */
+    .heading-responsive-xl {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+    
+    .heading-responsive-lg {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+    
+    .heading-responsive-md {
+        font-size: clamp(1.5rem, 3vw, 1.875rem);
+    }
+    
+    .text-responsive {
+        font-size: clamp(1rem, 2.5vw, 1.125rem);
     }
 }
 
