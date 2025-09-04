@@ -78,14 +78,14 @@ const PortfolioSection = () => {
           <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-pattern-dots">
             <div
               ref={trackRef}
-              className="flex gap-4 sm:gap-6 lg:gap-8 xl:gap-12 w-[200%] py-4 sm:py-6 lg:py-8" // doubled width for seamless loop
+              className="flex gap-3 sm:gap-4 lg:gap-6 xl:gap-8 w-[200%] py-3 sm:py-4 lg:py-6" // doubled width for seamless loop
             >
               {[...allVideos, ...allVideos].map((video, index) => (
                 <div 
                   key={index}
-                  className="video-card flex-shrink-0 w-64 sm:w-72 lg:w-80 xl:w-96 video-glass gpu-accelerated"
+                  className="video-card flex-shrink-0 w-48 sm:w-56 lg:w-64 xl:w-72 video-glass gpu-accelerated"
                 >
-                  <div className="relative aspect-video bg-black rounded-lg sm:rounded-xl overflow-hidden">
+                  <div className="relative aspect-video bg-black rounded-xl sm:rounded-2xl overflow-hidden">
                     <iframe
                       className="absolute top-0 left-0 w-full h-full"
                       src={`https://www.youtube.com/embed/${video.videoId}?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0&showinfo=0`}
